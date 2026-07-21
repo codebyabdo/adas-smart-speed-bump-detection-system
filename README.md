@@ -19,17 +19,11 @@ AI-Powered Advanced Driver Assistance System (ADAS) for Real-Time Speed Bump Det
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-
 ![YOLO](https://img.shields.io/badge/YOLO-v11-success)
-
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
-
 ![Flutter](https://img.shields.io/badge/Flutter-Mobile-blue)
-
 ![Raspberry Pi](https://img.shields.io/badge/RaspberryPi-5-red)
-
 ![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-orange)
-
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 </p>
@@ -201,16 +195,16 @@ Flutter retrieves bump locations and provides visual and audible warnings for dr
 
 The hardware platform was designed to provide a compact, low-cost, and portable embedded AI solution capable of running entirely on edge devices without requiring cloud processing.
 
-| Component | Model | Purpose |
-|------------|----------------------|--------------------------------|
-| Main Controller | Raspberry Pi 5 (8GB) | AI inference and system control |
-| Camera | Raspberry Pi Camera Module V2 | Real-time road image acquisition |
-| GPS | u-blox NEO-6M | Geographic localization |
-| IMU | MPU6050 | Vehicle motion and bump confirmation |
-| Display | OLED 0.96" | Local status visualization |
-| Alert Device | Buzzer | Driver warning |
-| Storage | 64GB MicroSD | Operating system and project files |
-| Power | 5V 5A USB-C | Stable embedded operation |
+| Component       | Model                         | Purpose                              |
+| --------------- | ----------------------------- | ------------------------------------ |
+| Main Controller | Raspberry Pi 5 (8GB)          | AI inference and system control      |
+| Camera          | Raspberry Pi Camera Module V2 | Real-time road image acquisition     |
+| GPS             | u-blox NEO-6M                 | Geographic localization              |
+| IMU             | MPU6050                       | Vehicle motion and bump confirmation |
+| Display         | OLED 0.96"                    | Local status visualization           |
+| Alert Device    | Buzzer                        | Driver warning                       |
+| Storage         | 64GB MicroSD                  | Operating system and project files   |
+| Power           | 5V 5A USB-C                   | Stable embedded operation            |
 
 ---
 
@@ -542,12 +536,12 @@ The backend performs:
 
 # REST API
 
-| Endpoint | Method | Description |
-|-----------|----------|-----------------------------|
-| / | GET | API Status |
-| /report_bump | POST | Save detected bump |
-| /get_bumps | GET | Retrieve stored bumps |
-| /clear_bumps | DELETE | Reset database |
+| Endpoint     | Method | Description           |
+| ------------ | ------ | --------------------- |
+| /            | GET    | API Status            |
+| /report_bump | POST   | Save detected bump    |
+| /get_bumps   | GET    | Retrieve stored bumps |
+| /clear_bumps | DELETE | Reset database        |
 
 ---
 
@@ -557,9 +551,9 @@ POST /report_bump
 
 ```json
 {
-    "latitude":30.044315,
-    "longitude":31.235729,
-    "confidence":0.91
+  "latitude": 30.044315,
+  "longitude": 31.235729,
+  "confidence": 0.91
 }
 ```
 
@@ -569,8 +563,8 @@ POST /report_bump
 
 ```json
 {
-    "status":"success",
-    "message":"Bump recorded successfully"
+  "status": "success",
+  "message": "Bump recorded successfully"
 }
 ```
 
@@ -645,14 +639,14 @@ Future versions will migrate to PostgreSQL or Firebase.
 
 The proposed system achieved reliable performance during laboratory testing.
 
-| Metric | Result |
-|------------|--------------|
-| Detection Accuracy | 94.7% |
-| GPS Accuracy | ±1.8 m |
-| API Response | 120 ms |
-| FPS | 18–24 FPS |
-| Model | YOLO11 |
-| Platform | Raspberry Pi 5 |
+| Metric             | Result         |
+| ------------------ | -------------- |
+| Detection Accuracy | 94.7%          |
+| GPS Accuracy       | ±1.8 m         |
+| API Response       | 120 ms         |
+| FPS                | 18–24 FPS      |
+| Model              | YOLO11         |
+| Platform           | Raspberry Pi 5 |
 
 ---
 
@@ -675,17 +669,17 @@ adas-smart-speed-bump-detection-system/
 
 Complete engineering documentation is available inside the **docs/** directory.
 
-| File | Description |
-|----------------------------|---------------------------------------|
-| architecture.md | Complete system architecture |
-| hardware.md | Hardware documentation |
-| software.md | Software architecture |
-| ai-model.md | AI training pipeline |
-| api.md | Backend API |
-| testing.md | Testing procedures |
-| engineering-decisions.md | Design decisions |
-| roadmap.md | Future roadmap |
-| responsibilities.md | Team responsibilities |
+| File                     | Description                  |
+| ------------------------ | ---------------------------- |
+| architecture.md          | Complete system architecture |
+| hardware.md              | Hardware documentation       |
+| software.md              | Software architecture        |
+| ai-model.md              | AI training pipeline         |
+| api.md                   | Backend API                  |
+| testing.md               | Testing procedures           |
+| engineering-decisions.md | Design decisions             |
+| roadmap.md               | Future roadmap               |
+| responsibilities.md      | Team responsibilities        |
 
 ---
 
@@ -716,16 +710,16 @@ Documentation Engineer
 
 # Project Team
 
-| Member | Responsibility |
-|------------------------------|---------------------------------------------|
-| Mahmoud Kamal Abd Elkader | Team Lead & System Integration |
-| Omar Ahmed Zaki | Backend Developer |
-| Abd El-Rahman Adel Sayed | Software Architecture & Documentation |
-| Abd El-Rahman Ahmed Zaki | Dataset & AI Training |
-| Mahmoud Ahmed Mohamed | Mobile Application |
-| El-Hussin Ahmed Abo El-Magd | GPS & Sensor Integration |
-| Ali Mohamed Ali | Hardware Integration |
-| Hossam Sayed Ahmed | Embedded Systems |
+| Member                      | Responsibility                        |
+| --------------------------- | ------------------------------------- |
+| Mahmoud Kamal Abd Elkader   | Team Lead & System Integration        |
+| Omar Ahmed Zaki             | Backend Developer                     |
+| Abd El-Rahman Adel Sayed    | Software Architecture & Documentation |
+| Abd El-Rahman Ahmed Zaki    | Dataset & AI Training                 |
+| Mahmoud Ahmed Mohamed       | Mobile Application                    |
+| El-Hussin Ahmed Abo El-Magd | GPS & Sensor Integration              |
+| Ali Mohamed Ali             | Hardware Integration                  |
+| Hossam Sayed Ahmed          | Embedded Systems                      |
 
 ---
 
@@ -748,13 +742,13 @@ The next generation of the project will include:
 
 # Screenshots
 
-| Preview |
-|----------|
+| Preview             |
+| ------------------- |
 | Detection Interface |
-| Mobile Application |
-| Hardware Setup |
-| API Documentation |
-| Google Maps |
+| Mobile Application  |
+| Hardware Setup      |
+| API Documentation   |
+| Google Maps         |
 | System Architecture |
 
 ---
