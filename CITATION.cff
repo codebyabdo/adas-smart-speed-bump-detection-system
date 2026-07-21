@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+
+title: ADAS Smart Speed Bump Detection System
+
+message: >
+  If you use this project in your research,
+  please cite it using the metadata below.
+
+authors:
+
+- family-names: Adel
+  given-names: Abd El-Rahman
+
+- family-names: Kamal
+  given-names: Mahmoud
+
+date-released: 2026-06-01
+
+version: 1.0
+
+license: MIT
+
+repository-code: https://github.com/codebyabdo/adas-smart-speed-bump-detection-system
+
+keywords:
+
+- ADAS
+- Computer Vision
+- YOLO11
+- Raspberry Pi
+- FastAPI
+- Flutter
+- Embedded AI
